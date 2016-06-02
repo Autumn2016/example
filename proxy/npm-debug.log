@@ -1,0 +1,207 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/qiuyi/software/node-v4.4.2-linux-x64/bin/node',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'node-curl' ]
+2 info using npm@2.15.0
+3 info using node@v4.4.2
+4 verbose install initial load of /home/qiuyi/test/proxy/package.json
+5 verbose installManyTop reading scoped package data from /home/qiuyi/test/proxy/node_modules/curl/package.json
+6 verbose installManyTop reading scoped package data from /home/qiuyi/test/proxy/node_modules/express/package.json
+7 verbose installManyTop reading scoped package data from /home/qiuyi/test/proxy/node_modules/http-proxy/package.json
+8 info package.json curl@0.1.4 No repository field.
+9 info package.json curl@0.1.4 No license field.
+10 verbose readDependencies loading dependencies from /home/qiuyi/test/proxy/package.json
+11 silly cache add args [ 'node-curl', null ]
+12 verbose cache add spec node-curl
+13 silly cache add parsed spec Result {
+13 silly cache add   raw: 'node-curl',
+13 silly cache add   scope: null,
+13 silly cache add   name: 'node-curl',
+13 silly cache add   rawSpec: '',
+13 silly cache add   spec: 'latest',
+13 silly cache add   type: 'tag' }
+14 silly addNamed node-curl@latest
+15 verbose addNamed "latest" is being treated as a dist-tag for node-curl
+16 info addNameTag [ 'node-curl', 'latest' ]
+17 silly mapToRegistry name node-curl
+18 silly mapToRegistry using default registry
+19 silly mapToRegistry registry http://registry.npmjs.org/
+20 silly mapToRegistry data Result {
+20 silly mapToRegistry   raw: 'node-curl',
+20 silly mapToRegistry   scope: null,
+20 silly mapToRegistry   name: 'node-curl',
+20 silly mapToRegistry   rawSpec: '',
+20 silly mapToRegistry   spec: 'latest',
+20 silly mapToRegistry   type: 'tag' }
+21 silly mapToRegistry uri http://registry.npmjs.org/node-curl
+22 verbose addNameTag registry:http://registry.npmjs.org/node-curl not in flight; fetching
+23 verbose request uri http://registry.npmjs.org/node-curl
+24 verbose request no auth needed
+25 info attempt registry request try #1 at 09:07:39
+26 verbose request id 7aca6e59f5e583c3
+27 verbose etag "6BRQTSQA310L5MQWOUIIC9A6P"
+28 http request GET http://registry.npmjs.org/node-curl
+29 http 304 http://registry.npmjs.org/node-curl
+30 verbose headers { date: 'Wed, 27 Apr 2016 01:07:43 GMT',
+30 verbose headers   via: '1.1 varnish',
+30 verbose headers   'cache-control': 'max-age=300',
+30 verbose headers   etag: '"6BRQTSQA310L5MQWOUIIC9A6P"',
+30 verbose headers   age: '37',
+30 verbose headers   connection: 'keep-alive',
+30 verbose headers   'x-served-by': 'cache-nrt6135-NRT',
+30 verbose headers   'x-cache': 'HIT',
+30 verbose headers   'x-cache-hits': '1',
+30 verbose headers   'x-timer': 'S1461719263.173880,VS0,VE0',
+30 verbose headers   vary: 'Accept-Encoding' }
+31 silly get cb [ 304,
+31 silly get   { date: 'Wed, 27 Apr 2016 01:07:43 GMT',
+31 silly get     via: '1.1 varnish',
+31 silly get     'cache-control': 'max-age=300',
+31 silly get     etag: '"6BRQTSQA310L5MQWOUIIC9A6P"',
+31 silly get     age: '37',
+31 silly get     connection: 'keep-alive',
+31 silly get     'x-served-by': 'cache-nrt6135-NRT',
+31 silly get     'x-cache': 'HIT',
+31 silly get     'x-cache-hits': '1',
+31 silly get     'x-timer': 'S1461719263.173880,VS0,VE0',
+31 silly get     vary: 'Accept-Encoding' } ]
+32 verbose etag http://registry.npmjs.org/node-curl from cache
+33 verbose get saving node-curl to /home/qiuyi/.npm/registry.npmjs.org/node-curl/.cache.json
+34 verbose correctMkdir /home/qiuyi/.npm correctMkdir not in flight; initializing
+35 silly addNameTag next cb for node-curl with tag latest
+36 silly addNamed node-curl@0.3.3
+37 verbose addNamed "0.3.3" is a plain semver version for node-curl
+38 silly cache afterAdd node-curl@0.3.3
+39 verbose afterAdd /home/qiuyi/.npm/node-curl/0.3.3/package/package.json not in flight; writing
+40 verbose correctMkdir /home/qiuyi/.npm correctMkdir not in flight; initializing
+41 verbose afterAdd /home/qiuyi/.npm/node-curl/0.3.3/package/package.json written
+42 silly install resolved [ { name: 'node-curl',
+42 silly install resolved     version: '0.3.3',
+42 silly install resolved     author: { name: 'Jiang Miao', email: 'jiangfriend@gmail.com' },
+42 silly install resolved     description: 'node wrapper for multi curl, fully implemented.',
+42 silly install resolved     keywords: [ 'node-curl', 'curl', 'multi-curl', 'mcurl' ],
+42 silly install resolved     homepage: 'http://github.com/jiangmiao/node-curl',
+42 silly install resolved     repository: { type: 'git', url: 'git://github.com/jiangmiao/node-curl.git' },
+42 silly install resolved     main: './lib',
+42 silly install resolved     scripts: { install: 'sh src/generate_curl_options_list.sh && (node-gyp rebuild || node-waf configure build)' },
+42 silly install resolved     engines: { node: '>= 0.6.0' },
+42 silly install resolved     bugs: { url: 'https://github.com/jiangmiao/node-curl/issues' },
+42 silly install resolved     _id: 'node-curl@0.3.3',
+42 silly install resolved     _shasum: '71274370774c2298b860307a9e45877701638735',
+42 silly install resolved     _resolved: 'http://registry.npmjs.org/node-curl/-/node-curl-0.3.3.tgz',
+42 silly install resolved     _from: 'node-curl@latest',
+42 silly install resolved     _npmVersion: '1.4.23',
+42 silly install resolved     _npmUser: { name: 'jiangmiao', email: 'jiangfriend@gmail.com' },
+42 silly install resolved     maintainers: [ [Object] ],
+42 silly install resolved     dist:
+42 silly install resolved      { shasum: '71274370774c2298b860307a9e45877701638735',
+42 silly install resolved        tarball: 'https://registry.npmjs.org/node-curl/-/node-curl-0.3.3.tgz' },
+42 silly install resolved     directories: {},
+42 silly install resolved     readme: 'ERROR: No README data found!' } ]
+43 info install node-curl@0.3.3 into /home/qiuyi/test/proxy
+44 info installOne node-curl@0.3.3
+45 verbose installOne of node-curl to /home/qiuyi/test/proxy not in flight; installing
+46 verbose correctMkdir /home/qiuyi/.npm/_locks correctMkdir not in flight; initializing
+47 verbose lock using /home/qiuyi/.npm/_locks/node-curl-43873302c3cfd5d8.lock for /home/qiuyi/test/proxy/node_modules/node-curl
+48 silly install write writing node-curl 0.3.3 to /home/qiuyi/test/proxy/node_modules/node-curl
+49 verbose unbuild node_modules/node-curl
+50 silly gentlyRm /home/qiuyi/test/proxy/node_modules/node-curl is being purged from base /home/qiuyi/test/proxy
+51 verbose gentlyRm don't care about contents; nuking /home/qiuyi/test/proxy/node_modules/node-curl
+52 verbose tar unpack /home/qiuyi/.npm/node-curl/0.3.3/package.tgz
+53 verbose tar unpacking to /home/qiuyi/test/proxy/node_modules/node-curl
+54 silly gentlyRm /home/qiuyi/test/proxy/node_modules/node-curl is being purged
+55 verbose gentlyRm don't care about contents; nuking /home/qiuyi/test/proxy/node_modules/node-curl
+56 silly gunzTarPerm modes [ '755', '644' ]
+57 silly gunzTarPerm extractEntry package.json
+58 silly gunzTarPerm extractEntry .npmignore
+59 silly gunzTarPerm extractEntry README.md
+60 silly gunzTarPerm extractEntry index.js
+61 silly gunzTarPerm extractEntry binding.gyp
+62 silly gunzTarPerm extractEntry examples/curl.js
+63 silly gunzTarPerm extractEntry examples/low-level.js
+64 silly gunzTarPerm extractEntry examples/post-multi-part.js
+65 silly gunzTarPerm extractEntry examples/test.js
+66 silly gunzTarPerm extractEntry examples/low-level-pressure.js
+67 silly gunzTarPerm extractEntry examples/test-stream.js
+68 silly gunzTarPerm extractEntry examples/pressure-multi-post.js
+69 silly gunzTarPerm extractEntry examples/test-get-info.js
+70 silly gunzTarPerm extractEntry examples/test-errors.js
+71 silly gunzTarPerm extractEntry examples/quick-start.js
+72 silly gunzTarPerm extractEntry examples/post.js
+73 silly gunzTarPerm extractEntry examples/pressure.js
+74 silly gunzTarPerm extractEntry examples/pressure.toffee
+75 silly gunzTarPerm extractEntry examples/curl.toffee
+76 silly gunzTarPerm extractEntry examples/test-errors.toffee
+77 silly gunzTarPerm extractEntry examples/pressure-multi-post.toffee
+78 silly gunzTarPerm extractEntry examples/post.toffee
+79 silly gunzTarPerm extractEntry examples/test-stream.toffee
+80 silly gunzTarPerm extractEntry examples/post-multi-part.toffee
+81 silly gunzTarPerm extractEntry examples/test.toffee
+82 silly gunzTarPerm extractEntry .travis.yml
+83 silly gunzTarPerm extractEntry index.toffee
+84 silly gunzTarPerm extractEntry lib/Curl.js
+85 silly gunzTarPerm extractEntry lib/CurlBuilder.js
+86 silly gunzTarPerm extractEntry lib/Curl.toffee
+87 silly gunzTarPerm extractEntry lib/CurlBuilder.toffee
+88 silly gunzTarPerm extractEntry LICENSE-MIT
+89 silly gunzTarPerm extractEntry src/generate_curl_options_list.sh
+90 silly gunzTarPerm extractEntry src/node-curl.cc
+91 silly gunzTarPerm extractEntry src/node-curl.h
+92 silly gunzTarPerm extractEntry wscript
+93 verbose write writing to /home/qiuyi/test/proxy/node_modules/node-curl/package.json
+94 info preinstall node-curl@0.3.3
+95 verbose readDependencies loading dependencies from /home/qiuyi/test/proxy/node_modules/node-curl/package.json
+96 verbose readDependencies loading dependencies from /home/qiuyi/test/proxy/node_modules/node-curl/package.json
+97 silly install resolved []
+98 verbose about to build /home/qiuyi/test/proxy/node_modules/node-curl
+99 info build /home/qiuyi/test/proxy/node_modules/node-curl
+100 info linkStuff node-curl@0.3.3
+101 silly linkStuff node-curl@0.3.3 has /home/qiuyi/test/proxy/node_modules as its parent node_modules
+102 verbose linkBins node-curl@0.3.3
+103 verbose linkMans node-curl@0.3.3
+104 verbose rebuildBundles node-curl@0.3.3
+105 info install node-curl@0.3.3
+106 verbose unsafe-perm in lifecycle false
+107 info node-curl@0.3.3 Failed to exec install script
+108 verbose unlock done using /home/qiuyi/.npm/_locks/node-curl-43873302c3cfd5d8.lock for /home/qiuyi/test/proxy/node_modules/node-curl
+109 verbose stack Error: node-curl@0.3.3 install: `sh src/generate_curl_options_list.sh && (node-gyp rebuild || node-waf configure build)`
+109 verbose stack spawn ENOENT
+109 verbose stack     at ChildProcess.<anonymous> (/home/qiuyi/software/node-v4.4.2-linux-x64/lib/node_modules/npm/lib/utils/spawn.js:17:16)
+109 verbose stack     at emitTwo (events.js:87:13)
+109 verbose stack     at ChildProcess.emit (events.js:172:7)
+109 verbose stack     at maybeClose (internal/child_process.js:827:16)
+109 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
+110 verbose pkgid node-curl@0.3.3
+111 verbose cwd /home/qiuyi/test/proxy
+112 error Linux 4.2.0-35-generic
+113 error argv "/home/qiuyi/software/node-v4.4.2-linux-x64/bin/node" "/usr/bin/npm" "install" "node-curl"
+114 error node v4.4.2
+115 error npm  v2.15.0
+116 error file sh
+117 error code ELIFECYCLE
+118 error errno ENOENT
+119 error syscall spawn
+120 error node-curl@0.3.3 install: `sh src/generate_curl_options_list.sh && (node-gyp rebuild || node-waf configure build)`
+120 error spawn ENOENT
+121 error Failed at the node-curl@0.3.3 install script 'sh src/generate_curl_options_list.sh && (node-gyp rebuild || node-waf configure build)'.
+121 error This is most likely a problem with the node-curl package,
+121 error not with npm itself.
+121 error Tell the author that this fails on your system:
+121 error     sh src/generate_curl_options_list.sh && (node-gyp rebuild || node-waf configure build)
+121 error You can get information on how to open an issue for this project with:
+121 error     npm bugs node-curl
+121 error Or if that isn't available, you can get their info via:
+121 error
+121 error     npm owner ls node-curl
+121 error There is likely additional logging output above.
+122 verbose exit [ 1, true ]
+123 verbose unbuild node_modules/node-curl
+124 info preuninstall node-curl@0.3.3
+125 info uninstall node-curl@0.3.3
+126 verbose unbuild rmStuff node-curl@0.3.3 from /home/qiuyi/test/proxy/node_modules
+127 info postuninstall node-curl@0.3.3
+128 silly gentlyRm /home/qiuyi/test/proxy/node_modules/node-curl is being purged from base /home/qiuyi/test/proxy
+129 verbose gentlyRm don't care about contents; nuking /home/qiuyi/test/proxy/node_modules/node-curl
+130 silly vacuum-fs purging /home/qiuyi/test/proxy/node_modules/node-curl
+131 silly vacuum-fs quitting because other entries in /home/qiuyi/test/proxy/node_modules

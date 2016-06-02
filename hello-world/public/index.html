@@ -1,0 +1,362 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="keywords" content="在线翻译,英文翻译,英语翻译,英文翻译,日语翻译,fanyi,英译汉,翻译网站" />
+	<meta name="description" content="爱词霸在线翻译为您提供权威准确的在线翻译、英语英文翻译、中译英、日语翻译、fanyi等在线服务。" />
+	<title>在线翻译_翻译在线__英语翻译_英文翻译_日语翻译__fanyi_爱词霸在线翻译</title>
+	<link rel='stylesheet' href='css/translation.css' />
+	<script type='text/javascript' src='scripts/search_common.js'></script>
+	<script type='text/javascript' src='http://cdn.iciba.com/web/js/jquery-1.10.2.min.js'></script>
+	<script type='text/javascript' src='scripts/jquery.autosize.js'></script>
+	<script type='text/javascript' src='scripts/ZeroClipboard.js'></script>
+	<script>
+	    var _czc = _czc || [];
+	    _czc.push(["_setAccount", "1256573702"]);
+	</script>
+</head>
+<body>
+    
+	<!-- 固定头部 start -->
+	<div class='header-nav'>
+        <div class='nav-logo'></div>
+        <!-- 导航item start -->
+        <ul class='nav-list'>
+            <li><a href='http://www.iciba.com' target='_blank' onclick="_czc.push(['_trackEvent','翻译','查词','翻译导航','','']);">查词</a></li>
+            <li class='active'><a class='current' href='http://fy.iciba.com' onclick="_czc.push(['_trackEvent','翻译','翻译','翻译导航','','']);">翻译</a></li>
+            <li><a href='http://translate.iciba.com' target="_blank" onclick="_czc.push(['_trackEvent','首页,查词结果','人工翻译','翻译导航','','']);">人工翻译</a></li>
+            <li><a href='http://news.iciba.com' target="_blank" onclick="_czc.push(['_trackEvent','翻译','咨询','翻译导航','','']);">发现</a></li>
+            <li><a href='http://word.iciba.com' target="_blank" onclick="_czc.push(['_trackEvent','翻译','背单词','翻译导航','','']);">背单词</a></li>
+            <li><a href='http://cp.iciba.com' target="_blank" onclick="_czc.push(['_trackEvent','翻译','翻译','翻译导航','','']);">词霸下载</a></li>
+            <li><a href='http://hoplink.ksosoft.com/rpv3' target="_blank" onclick="_czc.push(['_trackEvent','翻译','流利口语','翻译导航','','']);">流利口语</a></li>
+            <!--li style="position:relative">
+                <a href='http://hoplink.ksosoft.com/u3m0' target="_blank" onclick="_czc.push(['_trackEvent','查词结果','吐血推荐','首页导航','','']);">吐血推荐</a>
+                <img src="http://cdn.iciba.com/web/img/hot.png" style="width:11px;height:11px;vertical-align:middle;position:absolute;right:-5px;top:10px;" />
+            </li-->
+            <div class='clear'></div>
+        </ul>
+        <!-- 导航item end -->
+        <div class='user'>
+            <a href='#'><img class='u-profile' src='http://cdn.iciba.com/web/img/head.png' /></a>
+            <ul class='u-option'>
+                <div class='u-triangle'></div>
+                <li class='u-register'><a href='#' onclick="_czc.push(['_trackEvent','翻译','注册','翻译导航','','']);">注册</a></li>
+                <li class='u-login'><a href='#' onclick="_czc.push(['_trackEvent','翻译','登录','翻译导航','','']);">登录</a></li>
+            </ul>
+        </div>
+        <object style="height:0px;width:0px;overflow:hidden;" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" width="0" height="0" id="asound" align="absmiddle">
+            <param name="allowScriptAccess" value="sameDomain">
+            <param name="movie" value="images/asound.swf">
+            <param name="quality" value="high">
+            <embed src="images/asound.swf" quality="high" width="0" height="0" name="asound" align="absmiddle" allowscriptaccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer">
+        </object>
+    </div>
+
+<script>
+(function(window, $){
+	var $nav_lis = $('.nav-list li');
+    var currentNav = $('.nav-list li.active');
+	$nav_lis.mouseover(function(){
+		$nav_lis.removeClass('active');
+		$(this).addClass('active');
+	}).mouseout(function(){
+		$nav_lis.removeClass('active');
+		currentNav.addClass('active');
+	});
+	var $user = $('.user');
+	var $u_option = $('.u-option');
+	$user.mouseover(function(){
+		$u_option.show();
+	}).mouseout(function(){
+		$u_option.hide();
+	});
+    var ustat = getCookie('_ustat');
+    if (ustat == undefined) {
+        var uid = 0;
+    } else {
+        var oUstat = JSON.parse(ustat);
+        var uid = oUstat.i;
+    }
+    var selfUrl = window.location.href;
+    if (uid!=""&&uid!=0) {
+        $('.u-profile').attr("src", "http://my.iciba.com/index.php?c=avatars&m=display&uid="+uid+"&size=small");
+        $('.u-register a').attr("href", "http://my.iciba.com/?c=user");
+        $('.u-register a').attr("target", "_blank");
+        $('.u-register a').text("个人中心");
+        $('.u-login a').attr("href", "http://my.iciba.com/?c=logout&returnurl="+selfUrl);
+        $('.u-login a').attr("onclick", "syncScb()");
+        $('.u-login a').text("退出登录");
+    } else {
+        $('.u-profile').attr("src", "http://cdn.iciba.com/web/img/head.png");
+        $('.u-register a').attr("href", "http://my.iciba.com/?c=register&returnurl="+selfUrl);
+        $('.u-register a').text("注册");
+        $('.u-login a').attr("href", "http://my.iciba.com/?returnurl="+selfUrl);
+        $('.u-login a').text("登录");
+    }
+})(window, jQuery);
+</script>
+    
+	<!-- 固定头部 end -->
+	<div class='con-wrapper'>
+		<div class='trans-container'>
+			<div class='trans-oper'>
+				<div class='trans-lang'>
+					<div class='lang-auto'><span class='text'>自动检测语言</span><i class='triangle'></i></div>
+					<ul class='lang-list'>
+						<li class='lang-select selected' data-from="auto" data-to="auto" onclick="_czc.push(['_trackEvent','翻译','自动检测语言','输入框上','','']);">自动检测语言</li>
+						<li class='lang-select' data-from="zh" data-to="ja" onclick="_czc.push(['_trackEvent','翻译','中日','输入框上','','']);">中文<i class='exchange'></i>日语</li>
+						<li class='lang-select' data-from="es" data-to="zh" onclick="_czc.push(['_trackEvent','翻译','西中','输入框上','','']);">西班牙<i class='exchange'></i>中文</li>
+						<li class='lang-select' data-from="zh" data-to="en" onclick="_czc.push(['_trackEvent','翻译','中英','输入框上','','']);">中文<i class='exchange'></i>英文</li>
+						<li class='lang-select' data-from="zh" data-to="ko" onclick="_czc.push(['_trackEvent','翻译','中韩','输入框上','','']);">中文<i class='exchange'></i>韩语</li>
+						<li class='lang-select' data-from="fr" data-to="zh" onclick="_czc.push(['_trackEvent','翻译','法中','输入框上','','']);">法语<i class='exchange'></i>中文</li>
+						<li class='lang-select' data-from="zh" data-to="de" onclick="_czc.push(['_trackEvent','翻译','中德','输入框上','','']);">中文<i class='exchange'></i>德文</li>
+						<li class='lang-select' data-from="en" data-to="zh" onclick="_czc.push(['_trackEvent','翻译','英中','输入框上','','']);">英文<i class='exchange'></i>中文</li>
+						<li class='lang-select' data-from="ja" data-to="zh" onclick="_czc.push(['_trackEvent','翻译','日中','输入框上','','']);">日语<i class='exchange'></i>中文</li>
+						<li class='lang-select' data-from="zh" data-to="es" onclick="_czc.push(['_trackEvent','翻译','中西','输入框上','','']);">中文<i class='exchange'></i>西班牙</li>
+						<li class='lang-select' data-from="de" data-to="zh" onclick="_czc.push(['_trackEvent','翻译','德中','输入框上','','']);">德文<i class='exchange'></i>中文</li>
+						<li class='lang-select' data-from="ko" data-to="zh" onclick="_czc.push(['_trackEvent','翻译','韩中','输入框上','','']);">韩语<i class='exchange'></i>中文</li>
+						<li class='lang-select' data-from="zh" data-to="fr" onclick="_czc.push(['_trackEvent','翻译','中法','输入框上','','']);">中文<i class='exchange'></i>法语</li>
+					</ul>
+				</div>
+				<a class='trans-btn' href='javascript:void(0);' onclick="_czc.push(['_trackEvent','翻译','翻译','输入框上','','']);">翻&nbsp;译</a>
+				<a class='manual-trans-btn' href='http://translate.iciba.com/' onclick="_czc.push(['_trackEvent','翻译','人工翻译','输入框上','','']);">人工翻译</a>
+				<div class='oper-right'>
+					<!--<div class='lang-refer' id='lang_refer'><i class='check'></i><span class='text'>双语对照</span></div>-->
+                    <div id='iciba-text' style='font-size:13px;color:#999;margin-top:15px;'>爱词霸在线翻译</div>
+					<div class='lang-copy' id='copy_btn' data-clipboard-target='res_con' onclick="_czc.push(['_trackEvent','翻译','复制','结果框上','','']);">复制</div>
+				</div>
+			</div>
+			<div class='trans-text'>
+			<div class='textarea-wrap'>
+					<textarea class='textarea' id='textarea' placeholder='请输入您要翻译的内容'></textarea>
+					<i class='text-clear' id='text_clear' onclick="_czc.push(['_trackEvent','翻译','清空','输入框内','','']);"></i>
+				</div>
+				<div class='split-line'></div>
+				<div class='trans-result' id='trans_result'>
+                </div>
+			</div>
+			<div class='clear'></div>
+            <div style='margin-top:10px;'>
+                <!-- 新年答题活动start -->
+                <div class='newyear'  style='float:left;display:inline-block;'>
+                    <div>
+                        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                        <!-- 翻译站底部广告468*60 -->
+                        <ins class="adsbygoogle"
+                             style="display:inline-block;width:468px;height:60px"
+                             data-ad-client="ca-pub-5208124588633775"
+                             data-ad-slot="6920475045"></ins>
+                        <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                    </div>
+                    
+                </div>
+                <div style='float:left;width:475px;margin-left:10px;vertical-align:middle;font-size:13px;color:#999999;'>爱词霸翻译频道为您提供专业的中英文、日语、韩语、法语、西班牙语等全线在线翻译服务！</div>
+                <div class='clear'></div>
+                <!-- 新年答题活动end -->
+            </div>
+		</div>
+		<div class='bottom-con'>
+			<div class='trans-ad-bottom'>
+                <script>
+                (function() {
+                    var s = "_" + Math.random().toString(36).slice(2);
+                    document.write('<div id="' + s + '"></div>');
+                    (window.slotbydup=window.slotbydup || []).push({
+                        id: '2369904',
+                        container: s,
+                        size: '960,60',
+                        display: 'inlay-fix'
+                    });
+                })();
+                </script>
+                <script src="http://dup.baidustatic.com/js/os.js"></script>
+			</div>
+			<!-- 页面尾部 start -->
+			<div class="footer" id="footer">
+                <div class="footer_main">
+                    <a href="http://www.kingsoft.com/licence/001.jpg" class="blank">京ICP证100054号</a>
+                    <a href="http://www.hd315.gov.cn/beian/view.asp?bianhao=010202010082000006"><img align="absmiddle" border="0" alt="备案" src="http://cdn.iciba.com/web/static/images/ico_ft.gif"></a>
+                    <a href="http://www.kingsoft.com/licence/002.jpg" class="blank">新出网证&lt;京&gt;字011号</a>
+                    <span title="京公网安备110108400997号">京公网安备110108400997号</span>
+                    <a href="http://www.kingsoft.com/licence/003.jpg" class="blank">京网文【2011】0509-172号</a>
+                    <a href="http://www.miibeian.gov.cn/" class="blank">京ICP备06025896号</a>
+                    <span title="京公网安备110108400997号">©2015 Kingsoft Corp</span>
+		    <script src="http://s95.cnzz.com/z_stat.php?id=1256573702&web_id=1256573702" language="JavaScript"></script>
+                </div>
+            </div>
+			<!-- 页面尾部 end -->
+		</div>
+	</div>
+<script>
+(function(window, $){
+	$('#textarea').focus();
+	$('#textarea').autosize({className:'textarea',});
+	$('#lang_refer').click(function(){
+		if($(this).hasClass('checked')){
+			$(this).removeClass('checked');
+		}else {
+			$(this).addClass('checked');
+		}
+	});
+	$('.textarea-wrap').click(function(){
+		$('#textarea').focus();
+	});
+	$('.trans-lang').click(function(){
+		if($(this).hasClass('open-list')){
+			$(this).removeClass('open-list');
+		}else {
+			$(this).addClass('open-list');
+		}
+	});
+    $('#text_clear').click(function(){
+        $('#textarea').val('').css({'height': '250px'});
+        $(this).hide();
+        $('#trans_result').html('');
+        $('#copy_btn').hide();
+        $('#iciba-text').show();
+    });
+    $('#copy_btn').click(function(){
+        var that = $(this);
+        that.html('已复制');
+        setTimeout(function(){
+            that.html('复制');
+        }, 500);
+    });
+    $('.lang-list').delegate('li', 'click', function(event){
+        var langText = $(this).html(),
+            langFrom = $(this).attr('data-from'),
+            langTo = $(this).attr('data-to');
+        $('.lang-auto .text').html(langText);
+        $('.lang-auto').attr('data-from', langFrom).attr('data-to', langTo);
+        $('.lang-list .lang-select').removeClass('selected');
+        $(this).addClass('selected');
+        $('.trans-lang').removeClass('open-list');
+    });
+    $('.lang-list').click(function(event){
+        event.stopPropagation();
+    })
+    $(".trans-btn").click(function(){
+        translation();
+    });
+    var transTimer;
+    $("#textarea").bind("keyup", function(event){
+        //console.log(event.keyCode);
+        var searchStr = ($(this).val()).replace(/(^\s*)|(\s*$)/g, '');
+        if (event.keyCode >= 65 && event.keyCode <= 90 
+            || event.keyCode == 8 || event.keyCode == 46 || event.keyCode == 32
+            || event.keyCode >= 48 && event.keyCode <= 57) 
+        {
+            if(searchStr !== '') {
+                $('.text-clear').show();
+                if(transTimer) {
+                    clearTimeout(transTimer);
+                }
+                transTimer = setTimeout(function(){
+                    translation();
+                }, 1000);
+            }else {
+                $('#trans_result').html('');
+                $('.text-clear').hide();
+                $('#copy_btn').hide();
+                $('#iciba-text').show();
+            }
+        }
+    });
+    $("#textarea").bind("paste", function(){
+        setTimeout(function(){
+            if($("#textarea").val() !== '') {
+                $('.text-clear').show();
+                translation();
+            }else {
+                $('#trans_result').html('');
+                $('.text-clear').hide();
+            }
+        }, 100);
+        
+    });
+    //读音动画演示
+	function speakAnimation(speakItem){
+		speakItem.addClass('step1');
+		setTimeout(function(){
+			speakItem.removeClass('step1').addClass('step2');
+			setTimeout(function(){
+				speakItem.removeClass('step2').addClass('step3');
+				setTimeout(function(){
+					speakItem.removeClass('step3');
+				}, 400);
+			}, 400);
+		}, 400);		
+	}
+    $(document).delegate('i.speak-step', 'mouseover', function(){
+        speakAnimation($(this));
+    })
+})(window, jQuery);
+function translation()
+{
+    var from = $('.lang-auto').attr('data-from');
+    var to   = $('.lang-auto').attr('data-to');
+    var word = $("#textarea").val();
+    if(word === '') {return false;} 
+    var html = "";
+    $.ajax({
+        url:"./ajax.php?a=fy",
+        type:"post",
+        data:"&f="+from+"&t="+to+"&w="+word,
+        dataType:"json",
+        success:function(res){
+            if (res.status == 0) {
+                html += '<div class="res-con" id="res_con">';
+                html += '<div class="res-word">';
+                html += '<div class="word">'+word+'</div>';
+                html += '<div class="word-voice">';
+                if (res.content.ph_en != "") {
+                    html += '<span>英 [ '+res.content.ph_en+' ]</span>';
+                    if (res.content.ph_en_mp3 != "") {
+                        html += '<i class="speak-step" onmouseover="displayAudio(\''+res.content.ph_en_mp3+'\')"></i>';
+                    }
+                }
+                if (res.content.ph_am != "") {
+                    html += '<span>美 [ '+res.content.ph_am+' ]</span>';
+                    if (res.content.ph_am_mp3 != "") {
+                        html += '<i class="speak-step" onmouseover="displayAudio(\''+res.content.ph_am_mp3+'\')"></i>';
+                    }
+                }
+                html += '</div>';
+                for (var i in res.content.word_mean) {
+                    html += '<p class="prop">'+res.content.word_mean[i]+'</p>';
+                }
+                html += '</div>';
+                html += '</div>';
+                html += '<div class="more">';
+                html += '<a class="detail" href="http://www.iciba.com/'+word+'" target="_blank" onclick="_czc.push([\'_trackEvent\',\'翻译\',\'查看更多释义\',\'结果框内\',\'\',\'\']);">查看详细释义&gt;&gt;</a>';
+                html += '</div>';
+                $(".trans-result").html(html);
+                $('#copy_btn').hide();
+                $('#iciba-text').show();
+            } else if (res.status == 1) {
+                html += '<div class="res-con" id="res_con">';
+				html += '<div class="res-sentence">';
+				html += '<p class="sentence-other">';
+				html += '<span>'+res.content.out+'</span>';
+				html += '</p>';
+                html += '</div>';
+                html += '</div>';
+				html += '<div class="more">';
+				html += '<div class="origin">以上结果由百度翻译提供</div>';
+				html += '</div>';
+                $(".trans-result").html(html);
+                $('#iciba-text').hide();
+                $('#copy_btn').show();
+            }
+        }
+    });
+}
+var clip = new ZeroClipboard($('#copy_btn'));
+</script>
+<script type='text/javascript' src='http://open.iciba.com/huaci_new/huaci.js'></script>
+</body>
+</html>

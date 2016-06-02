@@ -1,0 +1,964 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class=" is-copy-enabled is-u2f-enabled">
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#">
+    <meta charset='utf-8'>
+
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/frameworks-3514e6d8825ab9f55728f0030acba498e5da5b85ebc8abc35f0f466ac9d2bdda.css" integrity="sha256-NRTm2IJaufVXKPADCsukmOXaW4XryKvDXw9GasnSvdo=" media="all" rel="stylesheet" />
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github-92b560dee7dafd08f0965a6d49e5e4298b3d856899681b308fd7809d9c35367b.css" integrity="sha256-krVg3ufa/QjwllptSeXkKYs9hWiZaBswj9eAnZw1Nns=" media="all" rel="stylesheet" />
+    
+    
+    
+    
+
+    <link as="script" href="https://assets-cdn.github.com/assets/frameworks-ea5bbb2a837377ffde53e1099e5909c8df4d36cc5e90c05aeb3694b157df7e4d.js" rel="preload" />
+    
+    <link as="script" href="https://assets-cdn.github.com/assets/github-391829145dbc07158dde112aa636b7ac8b58f7726527ce710bd56118ae1d2f57.js" rel="preload" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="viewport" content="width=device-width">
+    <meta content="origin-when-cross-origin" name="referrer" />
+    
+    <title>建立开发环境 · romens-cn/scc-doc Wiki</title>
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
+    <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+    <meta property="fb:app_id" content="1401488693436528">
+
+      <meta content="https://avatars2.githubusercontent.com/u/13675886?v=3&amp;s=400" name="twitter:image:src" /><meta content="@github" name="twitter:site" /><meta content="summary" name="twitter:card" /><meta content="romens-cn/scc-doc" name="twitter:title" /><meta content="scc-doc - Supply Chain Collabration Project Documents, Testing documents, etc" name="twitter:description" />
+      <meta content="https://avatars2.githubusercontent.com/u/13675886?v=3&amp;s=400" property="og:image" /><meta content="GitHub" property="og:site_name" /><meta content="object" property="og:type" /><meta content="romens-cn/scc-doc" property="og:title" /><meta content="https://github.com/romens-cn/scc-doc" property="og:url" /><meta content="scc-doc - Supply Chain Collabration Project Documents, Testing documents, etc" property="og:description" />
+      <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
+    <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
+    <link rel="assets" href="https://assets-cdn.github.com/">
+    <link rel="web-socket" href="wss://live.github.com/_sockets/MTgyNzU4OTE6NTgwODcxZWNiYTc3MzUzMWUzYTlkNGVkZmJjZGY2Y2Q6MzM3NDJjZjdkZDc3YWNlY2Q2OWRlMWZmY2QwNzYxZDY2Y2FhOWE4Yjk5N2QyNTI0ZjUzNTk1ZDdjM2Y1MjllNw==--d4ad6c48d1e49170c7893afb98ed57014f280e0c">
+    <meta name="pjax-timeout" content="1000">
+    <link rel="sudo-modal" href="/sessions/sudo_modal">
+
+    <meta name="msapplication-TileImage" content="/windows-tile.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="selected-link" value="repo_wiki" data-pjax-transient>
+
+    <meta name="google-site-verification" content="KT5gs8h0wvaagLKAVWq8bbeNwnZZK1r1XQysX3xurLU">
+<meta name="google-site-verification" content="ZzhVyEFwb7w3e0-uOTltm8Jsck2F5StVihD0exw2fsA">
+    <meta name="google-analytics" content="UA-3769691-2">
+
+<meta content="collector.githubapp.com" name="octolytics-host" /><meta content="github" name="octolytics-app-id" /><meta content="DED3A28A:7A82:128B73C7:574B9CB0" name="octolytics-dimension-request_id" /><meta content="18275891" name="octolytics-actor-id" /><meta content="Autumn2016" name="octolytics-actor-login" /><meta content="5c985971a6a4fce9d7c786de35f868e847bd6eda39956b047e2fd30ceb23d404" name="octolytics-actor-hash" />
+<meta content="/&lt;user-name&gt;/&lt;repo-name&gt;/wiki/show" data-pjax-transient="true" name="analytics-location" />
+
+
+
+  <meta class="js-ga-set" name="dimension1" content="Logged In">
+
+
+
+        <meta name="hostname" content="github.com">
+    <meta name="user-login" content="Autumn2016">
+
+        <meta name="expected-hostname" content="github.com">
+      <meta name="js-proxy-site-detection-payload" content="ZTZlOGVkYjFmZDYwYjBjODVhMGJkZGU3M2YwZWE2YTk0NTJjY2JjNTliNzQ4Yzc3ZTE0NzQ5N2FmM2FmZDIzZnx7InJlbW90ZV9hZGRyZXNzIjoiMjIyLjIxMS4xNjIuMTM4IiwicmVxdWVzdF9pZCI6IkRFRDNBMjhBOjdBODI6MTI4QjczQzc6NTc0QjlDQjAiLCJ0aW1lc3RhbXAiOjE0NjQ1NzMxMDR9">
+
+
+      <link rel="mask-icon" href="https://assets-cdn.github.com/pinned-octocat.svg" color="#4078c0">
+      <link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico">
+
+    <meta name="html-safe-nonce" content="1818e61e3e82fdfd623d6412abec1d7c14e51471">
+    <meta content="9f90579925543b0d152a8e59a756cd5d52e67f20" name="form-nonce" />
+
+    <meta http-equiv="x-pjax-version" content="e7cec84ad9772b41eb2a7820f7affce2">
+    
+
+      
+  <meta name="description" content="scc-doc - Supply Chain Collabration Project Documents, Testing documents, etc">
+  <meta name="go-import" content="github.com/romens-cn/scc-doc git https://github.com/romens-cn/scc-doc.git">
+
+  <meta content="13675886" name="octolytics-dimension-user_id" /><meta content="romens-cn" name="octolytics-dimension-user_login" /><meta content="40691459" name="octolytics-dimension-repository_id" /><meta content="romens-cn/scc-doc" name="octolytics-dimension-repository_nwo" /><meta content="false" name="octolytics-dimension-repository_public" /><meta content="false" name="octolytics-dimension-repository_is_fork" /><meta content="40691459" name="octolytics-dimension-repository_network_root_id" /><meta content="romens-cn/scc-doc" name="octolytics-dimension-repository_network_root_nwo" />
+  <link href="https://github.com/romens-cn/scc-doc/commits/master.atom?token=ARbeMzEiwzcoI-GAnrRS1PA-VB4JFOezks61V32wwA%3D%3D" rel="alternate" title="Recent Commits to scc-doc:master" type="application/atom+xml">
+
+
+  </head>
+
+
+  <body class="logged-in   env-production linux vis-private">
+    <div id="js-pjax-loader-bar" class="pjax-loader-bar"></div>
+    <a href="#start-of-content" tabindex="1" class="accessibility-aid js-skip-to-content">Skip to content</a>
+
+    
+    
+    
+
+
+
+        <div class="header header-logged-in true" role="banner">
+  <div class="container clearfix">
+
+    <a class="header-logo-invertocat" href="https://github.com/" data-hotkey="g d" aria-label="Homepage" data-ga-click="Header, go to dashboard, icon:logo">
+  <svg aria-hidden="true" class="octicon octicon-mark-github" height="28" version="1.1" viewBox="0 0 16 16" width="28"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59 0.4 0.07 0.55-0.17 0.55-0.38 0-0.19-0.01-0.82-0.01-1.49-2.01 0.37-2.53-0.49-2.69-0.94-0.09-0.23-0.48-0.94-0.82-1.13-0.28-0.15-0.68-0.52-0.01-0.53 0.63-0.01 1.08 0.58 1.23 0.82 0.72 1.21 1.87 0.87 2.33 0.66 0.07-0.52 0.28-0.87 0.51-1.07-1.78-0.2-3.64-0.89-3.64-3.95 0-0.87 0.31-1.59 0.82-2.15-0.08-0.2-0.36-1.02 0.08-2.12 0 0 0.67-0.21 2.2 0.82 0.64-0.18 1.32-0.27 2-0.27 0.68 0 1.36 0.09 2 0.27 1.53-1.04 2.2-0.82 2.2-0.82 0.44 1.1 0.16 1.92 0.08 2.12 0.51 0.56 0.82 1.27 0.82 2.15 0 3.07-1.87 3.75-3.65 3.95 0.29 0.25 0.54 0.73 0.54 1.48 0 1.07-0.01 1.93-0.01 2.2 0 0.21 0.15 0.46 0.55 0.38C13.71 14.53 16 11.53 16 8 16 3.58 12.42 0 8 0z"></path></svg>
+</a>
+
+
+        <div class="header-search scoped-search site-scoped-search js-site-search" role="search">
+  <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/romens-cn/scc-doc/search" class="js-site-search-form" data-scoped-search-url="/romens-cn/scc-doc/search" data-unscoped-search-url="/search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <label class="form-control header-search-wrapper js-chromeless-input-container">
+      <div class="header-search-scope">This repository</div>
+      <input type="text"
+        class="form-control header-search-input js-site-search-focus js-site-search-field is-clearable"
+        data-hotkey="s"
+        name="q"
+        placeholder="Search"
+        aria-label="Search this repository"
+        data-unscoped-placeholder="Search GitHub"
+        data-scoped-placeholder="Search"
+        tabindex="1"
+        autocapitalize="off">
+    </label>
+</form></div>
+
+
+      <ul class="header-nav left" role="navigation">
+        <li class="header-nav-item">
+          <a href="/pulls" class="js-selected-navigation-item header-nav-link" data-ga-click="Header, click, Nav menu - item:pulls context:user" data-hotkey="g p" data-selected-links="/pulls /pulls/assigned /pulls/mentioned /pulls">
+            Pull requests
+</a>        </li>
+        <li class="header-nav-item">
+          <a href="/issues" class="js-selected-navigation-item header-nav-link" data-ga-click="Header, click, Nav menu - item:issues context:user" data-hotkey="g i" data-selected-links="/issues /issues/assigned /issues/mentioned /issues">
+            Issues
+</a>        </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="https://gist.github.com/" data-ga-click="Header, go to gist, text:gist">Gist</a>
+          </li>
+      </ul>
+
+    
+<ul class="header-nav user-nav right" id="user-links">
+  <li class="header-nav-item">
+    
+
+  </li>
+
+  <li class="header-nav-item dropdown js-menu-container">
+    <a class="header-nav-link tooltipped tooltipped-s js-menu-target" href="/new"
+       aria-label="Create new…"
+       data-ga-click="Header, create new, icon:add">
+      <svg aria-hidden="true" class="octicon octicon-plus left" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 9H7v5H5V9H0V7h5V2h2v5h5v2z"></path></svg>
+      <span class="dropdown-caret"></span>
+    </a>
+
+    <div class="dropdown-menu-content js-menu-content">
+      <ul class="dropdown-menu dropdown-menu-sw">
+        
+<a class="dropdown-item" href="/new" data-ga-click="Header, create new repository">
+  New repository
+</a>
+
+  <a class="dropdown-item" href="/new/import" data-ga-click="Header, import a repository">
+    Import repository
+  </a>
+
+
+  <a class="dropdown-item" href="/organizations/new" data-ga-click="Header, create new organization">
+    New organization
+  </a>
+
+
+
+  <div class="dropdown-divider"></div>
+  <div class="dropdown-header">
+    <span title="romens-cn/scc-doc">This repository</span>
+  </div>
+    <a class="dropdown-item" href="/romens-cn/scc-doc/issues/new" data-ga-click="Header, create new issue">
+      New issue
+    </a>
+
+      </ul>
+    </div>
+  </li>
+
+  <li class="header-nav-item dropdown js-menu-container">
+    <a class="header-nav-link name tooltipped tooltipped-sw js-menu-target" href="/Autumn2016"
+       aria-label="View profile and more"
+       data-ga-click="Header, show menu, icon:avatar">
+      <img alt="@Autumn2016" class="avatar" height="20" src="https://avatars1.githubusercontent.com/u/18275891?v=3&amp;s=40" width="20" />
+      <span class="dropdown-caret"></span>
+    </a>
+
+    <div class="dropdown-menu-content js-menu-content">
+      <div class="dropdown-menu  dropdown-menu-sw">
+        <div class=" dropdown-header header-nav-current-user css-truncate">
+            Signed in as <strong class="css-truncate-target">Autumn2016</strong>
+
+        </div>
+
+
+        <div class="dropdown-divider"></div>
+
+          <a class="dropdown-item" href="/Autumn2016" data-ga-click="Header, go to profile, text:your profile">
+            Your profile
+          </a>
+        <a class="dropdown-item" href="/stars" data-ga-click="Header, go to starred repos, text:your stars">
+          Your stars
+        </a>
+          <a class="dropdown-item" href="/explore" data-ga-click="Header, go to explore, text:explore">
+            Explore
+          </a>
+          <a class="dropdown-item" href="/integrations" data-ga-click="Header, go to integrations, text:integrations">
+            Integrations
+          </a>
+        <a class="dropdown-item" href="https://help.github.com" data-ga-click="Header, go to help, text:help">
+          Help
+        </a>
+
+
+          <div class="dropdown-divider"></div>
+
+          <a class="dropdown-item" href="/settings/profile" data-ga-click="Header, go to settings, icon:settings">
+            Settings
+          </a>
+
+          <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/logout" class="logout-form" data-form-nonce="9f90579925543b0d152a8e59a756cd5d52e67f20" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="TCBKM2w7WkPUysltttYfBENmqmX7ixBADi5w8Bh5q4mSctLKC5NwyvtPah2qAFPZwaa6LDzH49nvnaQ5jk9GyA==" /></div>
+            <button class="dropdown-item dropdown-signout" data-ga-click="Header, sign out, icon:logout">
+              Sign out
+            </button>
+</form>
+      </div>
+    </div>
+  </li>
+</ul>
+
+
+    
+  </div>
+</div>
+
+
+      
+
+
+    <div id="start-of-content" class="accessibility-aid"></div>
+
+      <div id="js-flash-container">
+</div>
+
+
+    <div role="main" class="main-content">
+        <div itemscope itemtype="http://schema.org/SoftwareSourceCode">
+    <div id="js-repo-pjax-container" data-pjax-container>
+      
+<div class="pagehead repohead instapaper_ignore readability-menu experiment-repo-nav">
+  <div class="container repohead-details-container">
+
+    
+
+<ul class="pagehead-actions">
+
+  <li>
+        <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/notifications/subscribe" class="js-social-container" data-autosubmit="true" data-form-nonce="9f90579925543b0d152a8e59a756cd5d52e67f20" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="A6vZLrGKxlZWnjyGuWIZG32zhMRLr4QrkP4yJRtWhxNZozxbNQrOF52N/MozZqAfTbv7aX07jmS6mjfRicB62Q==" /></div>      <input class="form-control" id="repository_id" name="repository_id" type="hidden" value="40691459" />
+
+        <div class="select-menu js-menu-container js-select-menu">
+          <a href="/romens-cn/scc-doc/subscription"
+            class="btn btn-sm btn-with-count select-menu-button js-menu-target" role="button" tabindex="0" aria-haspopup="true"
+            data-ga-click="Repository, click Watch settings, action:wiki#show">
+            <span class="js-select-button">
+              <svg aria-hidden="true" class="octicon octicon-eye" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6c4.94 0 7.94-6 7.94-6S13 2 8.06 2z m-0.06 10c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4z m2-4c0 1.11-0.89 2-2 2s-2-0.89-2-2 0.89-2 2-2 2 0.89 2 2z"></path></svg>
+              Unwatch
+            </span>
+          </a>
+          <a class="social-count js-social-count" href="/romens-cn/scc-doc/watchers">
+            21
+          </a>
+
+        <div class="select-menu-modal-holder">
+          <div class="select-menu-modal subscription-menu-modal js-menu-content" aria-hidden="true">
+            <div class="select-menu-header js-navigation-enable" tabindex="-1">
+              <svg aria-label="Close" class="octicon octicon-x js-menu-close" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path d="M7.48 8l3.75 3.75-1.48 1.48-3.75-3.75-3.75 3.75-1.48-1.48 3.75-3.75L0.77 4.25l1.48-1.48 3.75 3.75 3.75-3.75 1.48 1.48-3.75 3.75z"></path></svg>
+              <span class="select-menu-title">Notifications</span>
+            </div>
+
+              <div class="select-menu-list js-navigation-container" role="menu">
+
+                <div class="select-menu-item js-navigation-item " role="menuitem" tabindex="0">
+                  <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5L4 13 0 9l1.5-1.5 2.5 2.5 6.5-6.5 1.5 1.5z"></path></svg>
+                  <div class="select-menu-item-text">
+                    <input id="do_included" name="do" type="radio" value="included" />
+                    <span class="select-menu-item-heading">Not watching</span>
+                    <span class="description">Be notified when participating or @mentioned.</span>
+                    <span class="js-select-button-text hidden-select-button-text">
+                      <svg aria-hidden="true" class="octicon octicon-eye" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6c4.94 0 7.94-6 7.94-6S13 2 8.06 2z m-0.06 10c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4z m2-4c0 1.11-0.89 2-2 2s-2-0.89-2-2 0.89-2 2-2 2 0.89 2 2z"></path></svg>
+                      Watch
+                    </span>
+                  </div>
+                </div>
+
+                <div class="select-menu-item js-navigation-item selected" role="menuitem" tabindex="0">
+                  <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5L4 13 0 9l1.5-1.5 2.5 2.5 6.5-6.5 1.5 1.5z"></path></svg>
+                  <div class="select-menu-item-text">
+                    <input checked="checked" id="do_subscribed" name="do" type="radio" value="subscribed" />
+                    <span class="select-menu-item-heading">Watching</span>
+                    <span class="description">Be notified of all conversations.</span>
+                    <span class="js-select-button-text hidden-select-button-text">
+                      <svg aria-hidden="true" class="octicon octicon-eye" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6c4.94 0 7.94-6 7.94-6S13 2 8.06 2z m-0.06 10c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4z m2-4c0 1.11-0.89 2-2 2s-2-0.89-2-2 0.89-2 2-2 2 0.89 2 2z"></path></svg>
+                      Unwatch
+                    </span>
+                  </div>
+                </div>
+
+                <div class="select-menu-item js-navigation-item " role="menuitem" tabindex="0">
+                  <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5L4 13 0 9l1.5-1.5 2.5 2.5 6.5-6.5 1.5 1.5z"></path></svg>
+                  <div class="select-menu-item-text">
+                    <input id="do_ignore" name="do" type="radio" value="ignore" />
+                    <span class="select-menu-item-heading">Ignoring</span>
+                    <span class="description">Never be notified.</span>
+                    <span class="js-select-button-text hidden-select-button-text">
+                      <svg aria-hidden="true" class="octicon octicon-mute" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M8 2.81v10.38c0 0.67-0.81 1-1.28 0.53L3 10H1c-0.55 0-1-0.45-1-1V7c0-0.55 0.45-1 1-1h2l3.72-3.72c0.47-0.47 1.28-0.14 1.28 0.53z m7.53 3.22l-1.06-1.06-1.97 1.97-1.97-1.97-1.06 1.06 1.97 1.97-1.97 1.97 1.06 1.06 1.97-1.97 1.97 1.97 1.06-1.06-1.97-1.97 1.97-1.97z"></path></svg>
+                      Stop ignoring
+                    </span>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+</form>
+  </li>
+
+  <li>
+    
+  <div class="js-toggler-container js-social-container starring-container ">
+
+    <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/romens-cn/scc-doc/unstar" class="starred" data-form-nonce="9f90579925543b0d152a8e59a756cd5d52e67f20" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="4rOZhtu/cYzd4o9GXn03NjkqDcjohRjnsB0FUDQUWV/OCnQq139kbUtBvkpeSBhx9Usk+QORfaHF0orFhwaLZw==" /></div>
+      <button
+        class="btn btn-sm btn-with-count js-toggler-target"
+        aria-label="Unstar this repository" title="Unstar romens-cn/scc-doc"
+        data-ga-click="Repository, click unstar button, action:wiki#show; text:Unstar">
+        <svg aria-hidden="true" class="octicon octicon-star" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M14 6l-4.9-0.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14l4.33-2.33 4.33 2.33L10.4 9.26 14 6z"></path></svg>
+        Unstar
+      </button>
+        <a class="social-count js-social-count" href="/romens-cn/scc-doc/stargazers">
+          0
+        </a>
+</form>
+    <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/romens-cn/scc-doc/star" class="unstarred" data-form-nonce="9f90579925543b0d152a8e59a756cd5d52e67f20" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="6rXH4vdJqsMxCg9TE38POQLDR2WrGudZ0MxiD0WztCUOx41QzNATh+ILNJ6RQLEsI6D0o9L8RLDKGwsjvEeKZw==" /></div>
+      <button
+        class="btn btn-sm btn-with-count js-toggler-target"
+        aria-label="Star this repository" title="Star romens-cn/scc-doc"
+        data-ga-click="Repository, click star button, action:wiki#show; text:Star">
+        <svg aria-hidden="true" class="octicon octicon-star" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M14 6l-4.9-0.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14l4.33-2.33 4.33 2.33L10.4 9.26 14 6z"></path></svg>
+        Star
+      </button>
+        <a class="social-count js-social-count" href="/romens-cn/scc-doc/stargazers">
+          0
+        </a>
+</form>  </div>
+
+  </li>
+
+  <li>
+          <a href="#fork-destination-box" class="btn btn-sm btn-with-count"
+              title="Fork your own copy of romens-cn/scc-doc to your account"
+              aria-label="Fork your own copy of romens-cn/scc-doc to your account"
+              rel="facebox"
+              data-ga-click="Repository, show fork modal, action:wiki#show; text:Fork">
+              <svg aria-hidden="true" class="octicon octicon-repo-forked" height="16" version="1.1" viewBox="0 0 10 16" width="10"><path d="M8 1c-1.11 0-2 0.89-2 2 0 0.73 0.41 1.38 1 1.72v1.28L5 8 3 6v-1.28c0.59-0.34 1-0.98 1-1.72 0-1.11-0.89-2-2-2S0 1.89 0 3c0 0.73 0.41 1.38 1 1.72v1.78l3 3v1.78c-0.59 0.34-1 0.98-1 1.72 0 1.11 0.89 2 2 2s2-0.89 2-2c0-0.73-0.41-1.38-1-1.72V9.5l3-3V4.72c0.59-0.34 1-0.98 1-1.72 0-1.11-0.89-2-2-2zM2 4.2c-0.66 0-1.2-0.55-1.2-1.2s0.55-1.2 1.2-1.2 1.2 0.55 1.2 1.2-0.55 1.2-1.2 1.2z m3 10c-0.66 0-1.2-0.55-1.2-1.2s0.55-1.2 1.2-1.2 1.2 0.55 1.2 1.2-0.55 1.2-1.2 1.2z m3-10c-0.66 0-1.2-0.55-1.2-1.2s0.55-1.2 1.2-1.2 1.2 0.55 1.2 1.2-0.55 1.2-1.2 1.2z"></path></svg>
+            Fork
+          </a>
+
+          <div id="fork-destination-box" style="display: none;">
+            <h2 class="facebox-header" data-facebox-id="facebox-header">Where should we fork this repository?</h2>
+            <include-fragment src=""
+                class="js-fork-select-fragment fork-select-fragment"
+                data-url="/romens-cn/scc-doc/fork?fragment=1">
+              <img alt="Loading" height="64" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-128.gif" width="64" />
+            </include-fragment>
+          </div>
+
+    <a href="/romens-cn/scc-doc/network" class="social-count">
+      0
+    </a>
+  </li>
+</ul>
+
+    <h1 class="entry-title private ">
+  <svg aria-hidden="true" class="octicon octicon-lock" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M4 13h-1v-1h1v1z m8-6v7c0 0.55-0.45 1-1 1H1c-0.55 0-1-0.45-1-1V7c0-0.55 0.45-1 1-1h1V4C2 1.8 3.8 0 6 0s4 1.8 4 4v2h1c0.55 0 1 0.45 1 1z m-8.2-1h4.41V4c0-1.22-0.98-2.2-2.2-2.2s-2.2 0.98-2.2 2.2v2z m7.2 1H2v7h9V7z m-7 1h-1v1h1v-1z m0 2h-1v1h1v-1z"></path></svg>
+  <span class="author" itemprop="author"><a href="/romens-cn" class="url fn" rel="author">romens-cn</a></span><!--
+--><span class="path-divider">/</span><!--
+--><strong itemprop="name"><a href="/romens-cn/scc-doc" data-pjax="#js-repo-pjax-container">scc-doc</a></strong>
+    <span class="repo-private-label">private</span>
+
+</h1>
+
+  </div>
+  <div class="container">
+    
+<nav class="reponav js-repo-nav js-sidenav-container-pjax"
+     itemscope
+     itemtype="http://schema.org/BreadcrumbList"
+     role="navigation"
+     data-pjax="#js-repo-pjax-container">
+
+  <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a href="/romens-cn/scc-doc" class="js-selected-navigation-item reponav-item" data-hotkey="g c" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches /romens-cn/scc-doc" itemprop="url">
+      <svg aria-hidden="true" class="octicon octicon-code" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M9.5 3l-1.5 1.5 3.5 3.5L8 11.5l1.5 1.5 4.5-5L9.5 3zM4.5 3L0 8l4.5 5 1.5-1.5L2.5 8l3.5-3.5L4.5 3z"></path></svg>
+      <span itemprop="name">Code</span>
+      <meta itemprop="position" content="1">
+</a>  </span>
+
+    <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+      <a href="/romens-cn/scc-doc/issues" class="js-selected-navigation-item reponav-item" data-hotkey="g i" data-selected-links="repo_issues repo_labels repo_milestones /romens-cn/scc-doc/issues" itemprop="url">
+        <svg aria-hidden="true" class="octicon octicon-issue-opened" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7S10.14 13.7 7 13.7 1.3 11.14 1.3 8s2.56-5.7 5.7-5.7m0-1.3C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7S10.86 1 7 1z m1 3H6v5h2V4z m0 6H6v2h2V10z"></path></svg>
+        <span itemprop="name">Issues</span>
+        <span class="counter">172</span>
+        <meta itemprop="position" content="2">
+</a>    </span>
+
+  <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a href="/romens-cn/scc-doc/pulls" class="js-selected-navigation-item reponav-item" data-hotkey="g p" data-selected-links="repo_pulls /romens-cn/scc-doc/pulls" itemprop="url">
+      <svg aria-hidden="true" class="octicon octicon-git-pull-request" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M11 11.28c0-1.73 0-6.28 0-6.28-0.03-0.78-0.34-1.47-0.94-2.06s-1.28-0.91-2.06-0.94c0 0-1.02 0-1 0V0L4 3l3 3V4h1c0.27 0.02 0.48 0.11 0.69 0.31s0.3 0.42 0.31 0.69v6.28c-0.59 0.34-1 0.98-1 1.72 0 1.11 0.89 2 2 2s2-0.89 2-2c0-0.73-0.41-1.38-1-1.72z m-1 2.92c-0.66 0-1.2-0.55-1.2-1.2s0.55-1.2 1.2-1.2 1.2 0.55 1.2 1.2-0.55 1.2-1.2 1.2zM4 3c0-1.11-0.89-2-2-2S0 1.89 0 3c0 0.73 0.41 1.38 1 1.72 0 1.55 0 5.56 0 6.56-0.59 0.34-1 0.98-1 1.72 0 1.11 0.89 2 2 2s2-0.89 2-2c0-0.73-0.41-1.38-1-1.72V4.72c0.59-0.34 1-0.98 1-1.72z m-0.8 10c0 0.66-0.55 1.2-1.2 1.2s-1.2-0.55-1.2-1.2 0.55-1.2 1.2-1.2 1.2 0.55 1.2 1.2z m-1.2-8.8c-0.66 0-1.2-0.55-1.2-1.2s0.55-1.2 1.2-1.2 1.2 0.55 1.2 1.2-0.55 1.2-1.2 1.2z"></path></svg>
+      <span itemprop="name">Pull requests</span>
+      <span class="counter">0</span>
+      <meta itemprop="position" content="3">
+</a>  </span>
+
+    <a href="/romens-cn/scc-doc/wiki" aria-selected="true" class="js-selected-navigation-item selected reponav-item" data-hotkey="g w" data-selected-links="repo_wiki /romens-cn/scc-doc/wiki">
+      <svg aria-hidden="true" class="octicon octicon-book" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M2 5h4v1H2v-1z m0 3h4v-1H2v1z m0 2h4v-1H2v1z m11-5H9v1h4v-1z m0 2H9v1h4v-1z m0 2H9v1h4v-1z m2-6v9c0 0.55-0.45 1-1 1H8.5l-1 1-1-1H1c-0.55 0-1-0.45-1-1V3c0-0.55 0.45-1 1-1h5.5l1 1 1-1h5.5c0.55 0 1 0.45 1 1z m-8 0.5l-0.5-0.5H1v9h6V3.5z m7-0.5H8.5l-0.5 0.5v8.5h6V3z"></path></svg>
+      Wiki
+</a>
+
+  <a href="/romens-cn/scc-doc/pulse" class="js-selected-navigation-item reponav-item" data-selected-links="pulse /romens-cn/scc-doc/pulse">
+    <svg aria-hidden="true" class="octicon octicon-pulse" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M11.5 8L8.8 5.4 6.6 8.5 5.5 1.6 2.38 8H0V10h3.6L4.5 8.2l0.9 5.4L9 8.5l1.6 1.5H14V8H11.5z"></path></svg>
+    Pulse
+</a>
+  <a href="/romens-cn/scc-doc/graphs" class="js-selected-navigation-item reponav-item" data-selected-links="repo_graphs repo_contributors /romens-cn/scc-doc/graphs">
+    <svg aria-hidden="true" class="octicon octicon-graph" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M16 14v1H0V0h1v14h15z m-11-1H3V8h2v5z m4 0H7V3h2v10z m4 0H11V6h2v7z"></path></svg>
+    Graphs
+</a>
+
+</nav>
+
+  </div>
+</div>
+
+<div class="container new-discussion-timeline experiment-repo-nav">
+  <div class="repository-content">
+
+    
+
+<div id="wiki-wrapper" class="wiki-wrapper page">
+<div class="gh-header">
+  <div class="gh-header-show">
+        <div class="gh-header-actions">
+          <a href="/romens-cn/scc-doc/wiki/%E5%BB%BA%E7%AB%8B%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/_edit" class="btn btn-sm ">Edit</a>
+          <a href="/romens-cn/scc-doc/wiki/_new" class="btn btn-sm btn-primary">New Page</a>
+        </div>
+    <h1 class="gh-header-title instapaper_title">建立开发环境</h1>
+      <div class="gh-header-meta">
+        hc-romens edited this page <relative-time datetime="2016-05-01T05:33:42Z">May 1, 2016</relative-time>
+        &middot;
+        <a href="/romens-cn/scc-doc/wiki/%E5%BB%BA%E7%AB%8B%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/_history" class="history">
+          11 revisions
+        </a>
+      </div>
+  </div>
+</div>
+<div id="wiki-content" class="wiki-content">
+  <div class="has-rightbar">
+
+  <div id="wiki-rightbar" class="wiki-rightbar">
+    <div class="wiki-pages-box readability-sidebar boxed-group flush js-wiki-pages-box collapsed" role="navigation">
+      
+<h3 class="js-wiki-toggle-collapse wiki-auxiliary-content">
+  <svg aria-hidden="true" class="octicon octicon-triangle-down caret-expanded" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M0 5l6 6 6-6H0z"></path></svg>
+  <svg aria-hidden="true" class="octicon octicon-triangle-right caret-collapsed" height="16" version="1.1" viewBox="0 0 6 16" width="6"><path d="M0 14l6-6L0 2v12z"></path></svg>
+  Pages <span class="counter">63</span>
+</h3>
+<div class="boxed-group-inner wiki-auxiliary-content wiki-auxiliary-content-no-bg">
+    <div class="filter-bar">
+      <input type="text" id="wiki-pages-filter" class="form-control input-sm input-block js-filterable-field" placeholder="Find a Page…" aria-label="Find a Page…" tabindex="2">
+    </div>
+
+  <ul class="wiki-pages" data-filterable-for="wiki-pages-filter" data-filterable-type="substring">
+    <li>
+      <strong><a href="/romens-cn/scc-doc/wiki" class="wiki-page-link">Home</a></strong>
+    </li>
+    <li>
+      <strong><a href="/romens-cn/scc-doc/wiki/20151227%E4%BC%9A%E8%AE%AE%E7%BA%AA%E8%A6%81" class="wiki-page-link">20151227会议纪要</a></strong>
+    </li>
+    <li>
+      <strong><a href="/romens-cn/scc-doc/wiki/20160108%E4%BC%9A%E8%AE%AE%E7%BA%AA%E8%A6%81" class="wiki-page-link">20160108会议纪要</a></strong>
+    </li>
+    <li>
+      <strong><a href="/romens-cn/scc-doc/wiki/%5BF1%5D%E4%BC%98%E6%83%A0%E5%88%B8%E7%AE%A1%E7%90%86" class="wiki-page-link">[F1]优惠券管理</a></strong>
+    </li>
+    <li>
+      <strong><a href="/romens-cn/scc-doc/wiki/%5BF1%5D%E4%BF%83%E9%94%80%E7%AE%A1%E7%90%86" class="wiki-page-link">[F1]促销管理</a></strong>
+    </li>
+    <li>
+      <strong><a href="/romens-cn/scc-doc/wiki/A03.%E5%88%86%E7%BA%A7%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90%E5%95%86%E6%88%B7%E9%97%A8%E6%88%B7" class="wiki-page-link">A03.分级域名解析商户门户</a></strong>
+    </li>
+    <li>
+      <strong><a href="/romens-cn/scc-doc/wiki/A03.%E9%97%A8%E6%88%B7%E6%A1%86%E6%9E%B6" class="wiki-page-link">A03.门户框架</a></strong>
+    </li>
+    <li>
+      <strong><a href="/romens-cn/scc-doc/wiki/architechture" class="wiki-page-link">architechture</a></strong>
+    </li>
+    <li>
+      <strong><a href="/romens-cn/scc-doc/wiki/B01.01-%E5%95%86%E6%88%B7%E9%A6%96%E9%A1%B5" class="wiki-page-link">B01.01 商户首页</a></strong>
+    </li>
+    <li>
+      <strong><a href="/romens-cn/scc-doc/wiki/B01.%E9%A6%96%E9%A1%B5%E5%B1%95%E7%A4%BA" class="wiki-page-link">B01.首页展示</a></strong>
+    </li>
+    <li>
+      <strong><a href="/romens-cn/scc-doc/wiki/C02.01-%E4%BB%8EERP%E6%89%B9%E9%87%8F%E5%AF%BC%E5%85%A5%E7%94%9F%E6%88%90%E5%AE%A2%E6%88%B7%E8%B4%A6%E5%8F%B7" class="wiki-page-link">C02.01 从ERP批量导入生成客户账号</a></strong>
+    </li>
+    <li>
+      <strong><a href="/romens-cn/scc-doc/wiki/C03.01-%E4%BB%8EERP%E6%89%B9%E9%87%8F%E5%AF%BC%E5%85%A5%E5%95%86%E5%93%81%E4%BF%A1%E6%81%AF" class="wiki-page-link">C03.01 从ERP批量导入商品信息</a></strong>
+    </li>
+    <li>
+      <strong><a href="/romens-cn/scc-doc/wiki/C03.07-%E5%95%86%E5%93%81%E4%BB%B7%E6%A0%BC%E7%AE%A1%E7%90%86" class="wiki-page-link">C03.07 商品价格管理</a></strong>
+    </li>
+    <li>
+      <strong><a href="/romens-cn/scc-doc/wiki/CDN%E5%9B%BE%E7%89%87%E4%B8%8A%E4%BC%A0%E6%8E%A5%E5%8F%A3" class="wiki-page-link">CDN图片上传接口</a></strong>
+    </li>
+    <li>
+      <strong><a href="/romens-cn/scc-doc/wiki/cronjob-design" class="wiki-page-link">cronjob design</a></strong>
+    </li>
+    <li class="wiki-more-pages">
+      <strong><a href="/romens-cn/scc-doc/wiki/EDI%E6%A8%A1%E5%BC%8F-&amp;-%E4%B8%AD%E5%AF%8C%E6%A8%A1%E5%BC%8F%E5%88%A9%E7%94%A8%5BSession.ID%E5%81%9A%E7%99%BB%E5%BD%95%E9%AA%8C%E8%AF%81%E8%AF%B4%E6%98%8E" class="wiki-page-link">EDI模式 &amp; 中富模式利用[Session.ID做登录验证说明</a></strong>
+    </li>
+    <li class="wiki-more-pages">
+      <strong><a href="/romens-cn/scc-doc/wiki/EDI%E6%A8%A1%E5%BC%8FSCC%E7%94%A8%E6%88%B7(%E4%BE%9B%E5%BA%94%E5%95%86&amp;%E5%AE%A2%E6%88%B7)%E6%9F%A5%E8%AF%A2%E6%95%B0%E6%8D%AE%E6%8E%A5%E5%8F%A3" class="wiki-page-link">EDI模式SCC用户(供应商&amp;客户)查询数据接口</a></strong>
+    </li>
+    <li class="wiki-more-pages">
+      <strong><a href="/romens-cn/scc-doc/wiki/font-awesome-%E5%9B%BE%E6%A0%87%E7%BC%96%E5%8F%B7%E8%A1%A8" class="wiki-page-link">font awesome 图标编号表</a></strong>
+    </li>
+    <li class="wiki-more-pages">
+      <strong><a href="/romens-cn/scc-doc/wiki/function" class="wiki-page-link">function</a></strong>
+    </li>
+    <li class="wiki-more-pages">
+      <strong><a href="/romens-cn/scc-doc/wiki/function1" class="wiki-page-link">function1</a></strong>
+    </li>
+    <li class="wiki-more-pages">
+      <strong><a href="/romens-cn/scc-doc/wiki/goods-center-design" class="wiki-page-link">goods center design</a></strong>
+    </li>
+    <li class="wiki-more-pages">
+      <strong><a href="/romens-cn/scc-doc/wiki/node.js%E7%9A%84%E5%B8%B8%E8%A7%81pattern" class="wiki-page-link">node.js的常见pattern</a></strong>
+    </li>
+    <li class="wiki-more-pages">
+      <strong><a href="/romens-cn/scc-doc/wiki/Node.JS%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83" class="wiki-page-link">Node.JS编码规范</a></strong>
+    </li>
+    <li class="wiki-more-pages">
+      <strong><a href="/romens-cn/scc-doc/wiki/notification-design" class="wiki-page-link">notification design</a></strong>
+    </li>
+    <li class="wiki-more-pages">
+      <strong><a href="/romens-cn/scc-doc/wiki/operation" class="wiki-page-link">operation</a></strong>
+    </li>
+    <li class="wiki-more-pages">
+      <strong><a href="/romens-cn/scc-doc/wiki/order-design" class="wiki-page-link">order design</a></strong>
+    </li>
+    <li class="wiki-more-pages">
+      <strong><a href="/romens-cn/scc-doc/wiki/payment-design" class="wiki-page-link">payment design</a></strong>
+    </li>
+    <li class="wiki-more-pages">
+      <strong><a href="/romens-cn/scc-doc/wiki/promotion-design" class="wiki-page-link">promotion design</a></strong>
+    </li>
+    <li class="wiki-more-pages">
+      <strong><a href="/romens-cn/scc-doc/wiki/SCC-ERP-%E4%BA%A4%E4%BA%92%E6%8E%A5%E5%8F%A3(%E5%95%86%E6%88%B7ERP)" class="wiki-page-link">SCC ERP 交互接口(商户ERP)</a></strong>
+    </li>
+    <li class="wiki-more-pages">
+      <strong><a href="/romens-cn/scc-doc/wiki/SCC-ERP%E6%8E%A5%E5%8F%A3(%E5%AE%A2%E6%88%B7ERP)" class="wiki-page-link">SCC ERP接口(客户ERP)</a></strong>
+    </li>
+    <li class="wiki-more-pages">
+      <strong><a href="/romens-cn/scc-doc/wiki/scc-react-React-%E8%A7%84%E8%8C%83(%E6%9C%AC%E9%A1%B9%E7%9B%AE%E7%9A%84react-%E7%89%88%E6%9C%AC%E6%98%AF0.13.3)" class="wiki-page-link">scc react React 规范(本项目的react 版本是0.13.3)</a></strong>
+    </li>
+    <li class="wiki-more-pages">
+      <strong><a href="/romens-cn/scc-doc/wiki/SCC%E7%A6%BB%E7%BA%BF%E4%BB%BB%E5%8A%A1%E6%8E%A5%E5%8F%A3%E8%A7%84%E8%8C%83" class="wiki-page-link">SCC离线任务接口规范</a></strong>
+    </li>
+    <li class="wiki-more-pages">
+      <strong><a href="/romens-cn/scc-doc/wiki/SCC%EF%BC%8DERP%E6%8E%A5%E5%8F%A3%E8%A7%84%E8%8C%83" class="wiki-page-link">SCC－ERP接口规范</a></strong>
+    </li>
+    <li class="wiki-more-pages">
+      <strong><a href="/romens-cn/scc-doc/wiki/System-monitor" class="wiki-page-link">System monitor</a></strong>
+    </li>
+    <li class="wiki-more-pages">
+      <strong><a href="/romens-cn/scc-doc/wiki/title1" class="wiki-page-link">title1</a></strong>
+    </li>
+    <li class="wiki-more-pages">
+      <strong><a href="/romens-cn/scc-doc/wiki/TOOLS" class="wiki-page-link">TOOLS</a></strong>
+    </li>
+    <li class="wiki-more-pages">
+      <strong><a href="/romens-cn/scc-doc/wiki/UI%E8%AE%BE%E8%AE%A1" class="wiki-page-link">UI设计</a></strong>
+    </li>
+    <li class="wiki-more-pages">
+      <strong><a href="/romens-cn/scc-doc/wiki/using_log" class="wiki-page-link">using_log</a></strong>
+    </li>
+    <li class="wiki-more-pages">
+      <strong><a href="/romens-cn/scc-doc/wiki/Windows%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE" class="wiki-page-link">Windows环境配置</a></strong>
+    </li>
+    <li class="wiki-more-pages">
+      <strong><a href="/romens-cn/scc-doc/wiki/%E4%B8%8EERP%E4%BA%A4%E4%BA%92API%EF%BC%881.0%EF%BC%89" class="wiki-page-link">与ERP交互API（1.0）</a></strong>
+    </li>
+    <li class="wiki-more-pages">
+      <strong><a href="/romens-cn/scc-doc/wiki/%E4%B8%AD%E5%AF%8C%E6%B3%B0%E7%A7%91-%E9%83%A8%E5%88%86%E6%8E%A5%E5%8F%A3%E5%AE%9A%E4%B9%89" class="wiki-page-link">中富泰科 部分接口定义</a></strong>
+    </li>
+    <li class="wiki-more-pages">
+      <strong><a href="/romens-cn/scc-doc/wiki/%E5%88%86%E9%94%80%E5%8A%9F%E8%83%BD" class="wiki-page-link">分销功能</a></strong>
+    </li>
+    <li class="wiki-more-pages">
+      <strong><a href="/romens-cn/scc-doc/wiki/%E5%88%9D%E5%A7%8B%E5%8C%96%E6%95%B0%E6%8D%AE%E9%97%AE%E9%A2%98%EF%BC%9A-Illegal-mix-of-collations" class="wiki-page-link">初始化数据问题： Illegal mix of collations</a></strong>
+    </li>
+    <li class="wiki-more-pages">
+      <strong><a href="/romens-cn/scc-doc/wiki/%E5%89%8D%E5%90%8E%E7%AB%AF%E6%95%B0%E6%8D%AE%E6%8E%A5%E5%8F%A3%E5%AE%9A%E4%B9%89" class="wiki-page-link">前后端数据接口定义</a></strong>
+    </li>
+    <li class="wiki-more-pages">
+      <strong><a href="/romens-cn/scc-doc/wiki/%E5%8A%9F%E8%83%BDA01%EF%BC%9ASCC%E8%BD%AF%E4%BB%B6%E6%9E%B6%E6%9E%84" class="wiki-page-link">功能A01：SCC软件架构</a></strong>
+    </li>
+    <li class="wiki-more-pages">
+      <strong><a href="/romens-cn/scc-doc/wiki/%E5%8A%9F%E8%83%BDA01%EF%BC%9A%E8%BD%AF%E4%BB%B6%E6%9E%B6%E6%9E%84" class="wiki-page-link">功能A01：软件架构</a></strong>
+    </li>
+    <li class="wiki-more-pages">
+      <strong><a href="/romens-cn/scc-doc/wiki/%E5%8A%9F%E8%83%BD%E6%8F%8F%E8%BF%B0" class="wiki-page-link">功能描述</a></strong>
+    </li>
+    <li class="wiki-more-pages">
+      <strong><a href="/romens-cn/scc-doc/wiki/%E5%8F%91%E8%A1%8C%E8%AF%B4%E6%98%8E" class="wiki-page-link">发行说明</a></strong>
+    </li>
+    <li class="wiki-more-pages">
+      <strong><a href="/romens-cn/scc-doc/wiki/%E5%A4%96%E5%9B%B4%E6%8E%A5%E5%8F%A3" class="wiki-page-link">外围接口</a></strong>
+    </li>
+    <li class="wiki-more-pages">
+      <strong><a href="/romens-cn/scc-doc/wiki/%E5%A4%A7%E5%B9%B3%E5%8F%B0%E7%99%BB%E5%BD%95%E6%8E%A5%E5%8F%A3" class="wiki-page-link">大平台登录接口</a></strong>
+    </li>
+    <li class="wiki-more-pages">
+      <strong><a href="/romens-cn/scc-doc/wiki/%E5%BB%BA%E7%AB%8B%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83" class="wiki-page-link">建立开发环境</a></strong>
+    </li>
+    <li class="wiki-more-pages">
+      <strong><a href="/romens-cn/scc-doc/wiki/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%91%BD%E5%90%8D%E5%8F%8A%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83" class="wiki-page-link">数据库命名及编码规范</a></strong>
+    </li>
+    <li class="wiki-more-pages">
+      <strong><a href="/romens-cn/scc-doc/wiki/%E6%9E%84%E5%BB%BA%E7%81%B5%E6%B4%BBB2B%E5%8C%BB%E8%8D%AF%E7%94%B5%E5%95%86%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84" class="wiki-page-link">构建灵活B2B医药电商系统架构</a></strong>
+    </li>
+    <li class="wiki-more-pages">
+      <strong><a href="/romens-cn/scc-doc/wiki/%E6%B5%8B%E8%AF%95%E6%96%87%E6%A1%A3" class="wiki-page-link">测试文档</a></strong>
+    </li>
+    <li class="wiki-more-pages">
+      <strong><a href="/romens-cn/scc-doc/wiki/%E7%89%88%E6%9C%AC" class="wiki-page-link">版本</a></strong>
+    </li>
+    <li class="wiki-more-pages">
+      <strong><a href="/romens-cn/scc-doc/wiki/%E7%89%88%E6%9C%ACV0.1" class="wiki-page-link">版本V0.1</a></strong>
+    </li>
+    <li class="wiki-more-pages">
+      <strong><a href="/romens-cn/scc-doc/wiki/%E7%89%88%E6%9C%ACV1.0" class="wiki-page-link">版本V1.0</a></strong>
+    </li>
+    <li class="wiki-more-pages">
+      <strong><a href="/romens-cn/scc-doc/wiki/%E7%A6%BB%E7%BA%BF%E4%BB%BB%E5%8A%A1%E2%80%94%E2%80%94%E5%90%8C%E6%AD%A5yiyao365%E8%8D%AF%E5%93%81%E6%AF%8D%E5%BA%93%E6%8E%A5%E5%8F%A3%E5%AE%9A%E4%B9%89" class="wiki-page-link">离线任务——同步yiyao365药品母库接口定义</a></strong>
+    </li>
+    <li class="wiki-more-pages">
+      <strong><a href="/romens-cn/scc-doc/wiki/%E7%A6%BB%E7%BA%BF%E5%90%8C%E6%AD%A5ERP%E5%95%86%E5%93%81%E6%95%B0%E6%8D%AE%E6%8E%A5%E5%8F%A3" class="wiki-page-link">离线同步ERP商品数据接口</a></strong>
+    </li>
+    <li class="wiki-more-pages">
+      <strong><a href="/romens-cn/scc-doc/wiki/%E7%A6%BB%E7%BA%BF%E5%90%8C%E6%AD%A5%E5%95%86%E6%88%B7%E6%95%B0%E6%8D%AE" class="wiki-page-link">离线同步商户数据</a></strong>
+    </li>
+    <li class="wiki-more-pages">
+      <strong><a href="/romens-cn/scc-doc/wiki/%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83" class="wiki-page-link">编码规范</a></strong>
+    </li>
+    <li class="wiki-more-pages">
+      <strong><a href="/romens-cn/scc-doc/wiki/%E8%8D%AF%E5%93%81%E5%BA%93%E6%8E%A5%E5%8F%A3" class="wiki-page-link">药品库接口</a></strong>
+    </li>
+    <li class="wiki-more-pages">
+      <strong><a href="/romens-cn/scc-doc/wiki/%E9%A1%B9%E7%9B%AE%E6%A6%82%E8%BF%B0" class="wiki-page-link">项目概述</a></strong>
+    </li>
+    <li class="wiki-more-pages-link">
+      <a href="#" class="js-wiki-more-pages-link">
+        Show 48 more pages…
+      </a>
+    </li>
+  </ul>
+</div>
+
+    </div>
+
+      <div class="gollum-markdown-content readability-sidebar box box-small">
+        <div class="wiki-custom-sidebar wiki-writable markdown-body">
+            <a href="/romens-cn/scc-doc/wiki/_Sidebar/_edit" class="wiki-edit-link" title="Edit sidebar">
+              <svg aria-hidden="true" class="octicon octicon-pencil" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M0 12v3h3l8-8-3-3L0 12z m3 2H1V12h1v1h1v1z m10.3-9.3l-1.3 1.3-3-3 1.3-1.3c0.39-0.39 1.02-0.39 1.41 0l1.59 1.59c0.39 0.39 0.39 1.02 0 1.41z"></path></svg>
+            </a>
+          <ol>
+<li><a href="%E9%A1%B9%E7%9B%AE%E6%A6%82%E8%BF%B0">项目概述</a></li>
+<li><a href="%E5%BB%BA%E7%AB%8B%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83">开发环境</a></li>
+<li><a href="%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83">编码规范</a></li>
+<li><a href="function">功能描述</a></li>
+<li><a href="architechture">功能设计</a></li>
+<li><a href="testcase">测试用例</a></li>
+<li><a href="release">发布版本</a></li>
+<li><a href="operation">运维管理</a></li>
+<li><a href="interfaces">外围接口文档</a></li>
+</ol>
+
+        </div>
+      </div>
+
+    <div class="clone-url">
+      <h5>Clone this wiki locally</h5>
+      <div class="input-group js-zeroclipboard-container">
+        <input type="text" class="form-control input-sm text-small text-muted input-monospace js-url-field js-zeroclipboard-target"
+               value="https://github.com/romens-cn/scc-doc.wiki.git" readonly="readonly">
+        <span class="input-group-button">
+          <button aria-label="Copy to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button tooltipped tooltipped-s" data-copied-hint="Copied!" type="button"><svg aria-hidden="true" class="octicon octicon-clippy" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M2 12h4v1H2v-1z m5-6H2v1h5v-1z m2 3V7L6 10l3 3V11h5V9H9z m-4.5-1H2v1h2.5v-1zM2 11h2.5v-1H2v1z m9 1h1v2c-0.02 0.28-0.11 0.52-0.3 0.7s-0.42 0.28-0.7 0.3H1c-0.55 0-1-0.45-1-1V3c0-0.55 0.45-1 1-1h3C4 0.89 4.89 0 6 0s2 0.89 2 2h3c0.55 0 1 0.45 1 1v5h-1V5H1v9h10V12zM2 4h8c0-0.55-0.45-1-1-1h-1c-0.55 0-1-0.45-1-1s-0.45-1-1-1-1 0.45-1 1-0.45 1-1 1h-1c-0.55 0-1 0.45-1 1z"></path></svg></button>
+        </span>
+      </div>
+
+
+    </div>
+  </div>
+
+  <div id="wiki-body" class="wiki-body gollum-markdown-content instapaper_body">
+      <div class="markdown-body">
+        <h5>
+<a id="user-content-1-操作系统" class="anchor" href="#1-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>1. 操作系统</h5>
+
+<p>1.1 Linux： 建议<strong><a href="http://mirrors.163.com/ubuntu-releases/14.04/ubuntu-14.04.4-desktop-amd64.iso">UBUNTU 14.04 LTS</a></strong></p>
+
+<p>1.2 Mac: 建议<strong><a href="https://support.apple.com/kb/DL1832?locale=zh_CN">OS-X 10.10</a></strong>以上</p>
+
+<h5>
+<a id="user-content-2-开发工具" class="anchor" href="#2-%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>2. 开发工具</h5>
+
+<p>2.1 IDE：<strong>JetBrains <a href="https://www.jetbrains.com/webstorm/">WebStorm 10</a></strong></p>
+
+<p>2.2 MySQL: <strong>MySQL 5.6.X</strong> (仅在本机上调试时需要配置，使用测试服务器调试时无须配置)</p>
+
+<ul>
+<li>在Linux上安装MySQL</li>
+</ul>
+
+<blockquote>
+<p><strong>$</strong> sudo apt-get update # 更新源</p>
+
+<p><strong>$</strong> sudo apt-get install mysql-server-5.6  <strong># 设置数据库管理员密码为：“romens@2015”</strong></p>
+</blockquote>
+
+<ul>
+<li>在Mac上安装MySQL</li>
+</ul>
+
+<blockquote>
+<p><strong>$</strong> /usr/bin/ruby -e "$(curl -fsSL <a href="https://raw.githubusercontent.com/Homebrew/install/master/install">https://raw.githubusercontent.com/Homebrew/install/master/install</a>)" # 安装brew</p>
+
+<p><strong>$</strong> brew search mysql # 查找所有的mysql相关的可用包</p>
+
+<p><strong>$</strong> brew install homebrew/versions/mysql56</p>
+</blockquote>
+
+<ul>
+<li>修改MySQL的root密码</li>
+</ul>
+
+<blockquote>
+<p><strong>$</strong> mysql -h localhost -uroot</p>
+
+<p><strong>mysql&gt;</strong> SET PASSWORD FOR 'root'@'localhost' = PASSWORD('romens@2015');</p>
+</blockquote>
+
+<p>2.3 Redis: <strong>Redis 2.8以上</strong> (仅在本机上调试时需要配置，使用测试服务器调试时无须配置)</p>
+
+<ul>
+<li>Linux</li>
+</ul>
+
+<blockquote>
+<p><strong>$</strong> apt-get update</p>
+
+<p><strong>$</strong> apt-get install redis-server</p>
+</blockquote>
+
+<ul>
+<li>Mac</li>
+</ul>
+
+<blockquote>
+<p><strong>$</strong> brew install redis</p>
+</blockquote>
+
+<p>2.4 安装nodejs</p>
+
+<ul>
+<li>Linux</li>
+</ul>
+
+<blockquote>
+<p><strong>$</strong> curl -sL <a href="https://deb.nodesource.com/setup_0.12">https://deb.nodesource.com/setup_0.12</a> | sudo -E bash -</p>
+
+<p><strong>$</strong> sudo apt-get install nodejs</p>
+</blockquote>
+
+<ul>
+<li>Mac</li>
+</ul>
+
+<blockquote>
+<p><strong>$</strong> brew install homebrew/versions/node012</p>
+</blockquote>
+
+<p>2.5 安装其他工具所需要的npm包</p>
+
+<blockquote>
+<p><strong>$</strong> npm install -g supervisor gulp</p>
+</blockquote>
+
+<h5>
+<a id="user-content-3-启动scc" class="anchor" href="#3-%E5%90%AF%E5%8A%A8scc" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>3. 启动scc</h5>
+
+<p>3.1 拉取scc源码, 用自己的github账号替换“<strong>hc-romens</strong>”</p>
+
+<blockquote>
+<p><strong>$</strong> git clone https://hc-romens@github.com/romens-cn/scc-src.git</p>
+</blockquote>
+
+<p>3.2 初始化环境变量, 其中符号"."为shell <a href="http://blog.csdn.net/thl789/article/details/6543836">source</a>命令，必须输入。</p>
+
+<blockquote>
+<p><strong>$</strong> cd scc-src
+<strong>$</strong> . bin/setenv.sh cd       # cd 为公司测试服务器域名, 如果使用本机的MySQL和Redis服务器，请更换为127.0.0.1</p>
+</blockquote>
+
+<p>3.3 初始化数据库</p>
+
+<blockquote>
+<p><strong>$</strong> db-init.sh </p>
+</blockquote>
+
+<p><img src="https://cloud.githubusercontent.com/assets/13675785/14418457/483bc812-fff1-11e5-9f0a-8675624f1ba0.png" alt="image"></p>
+
+<p>3.4 安装npm依赖包</p>
+
+<blockquote>
+<p><strong>$</strong> npm install</p>
+</blockquote>
+
+<p>3.4 启动scc</p>
+
+<blockquote>
+<p><strong>$</strong> go.sh cd</p>
+</blockquote>
+
+<p><img src="https://cloud.githubusercontent.com/assets/13675785/14418480/7f93a294-fff1-11e5-82b3-43c69c912bab.png" alt="image"></p>
+
+<p>3.5 启动react开发模式（仅在开发时使用，生产环境无须执行本操作），在新的terminal中执行</p>
+
+<blockquote>
+<p><strong>$</strong> cd quotation</p>
+
+<p><strong>$</strong> npm run dev</p>
+</blockquote>
+
+<h5>
+<a id="user-content-4-在浏览器访问" class="anchor" href="#4-%E5%9C%A8%E6%B5%8F%E8%A7%88%E5%99%A8%E8%AE%BF%E9%97%AE" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>4. 在浏览器访问</h5>
+
+<ul>
+<li>如果是B2B模式，打开<a href="http://127.0.0.1:3300">http://127.0.0.1:3300</a>
+</li>
+<li>如果是A证模式（EDI模式），打开<a href="http://127.0.0.1:4000">http://127.0.0.1:4000</a>
+</li>
+</ul>
+
+      </div>
+
+    <div id="wiki-footer" class="wiki-footer">
+      <a href="/romens-cn/scc-doc/wiki/_new?wiki%5Bname%5D=_Footer" class="wiki-empty-box"><svg aria-hidden="true" class="octicon octicon-plus" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 9H7v5H5V9H0V7h5V2h2v5h5v2z"></path></svg> Add a custom footer</a>
+    </div>
+  </div>
+  </div>
+</div>
+</div>
+
+
+  </div>
+  <div class="modal-backdrop"></div>
+</div>
+
+
+    </div>
+  </div>
+
+    </div>
+
+        <div class="container site-footer-container">
+  <div class="site-footer" role="contentinfo">
+    <ul class="site-footer-links right">
+        <li><a href="https://status.github.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
+      <li><a href="https://developer.github.com" data-ga-click="Footer, go to api, text:api">API</a></li>
+      <li><a href="https://training.github.com" data-ga-click="Footer, go to training, text:training">Training</a></li>
+      <li><a href="https://shop.github.com" data-ga-click="Footer, go to shop, text:shop">Shop</a></li>
+        <li><a href="https://github.com/blog" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
+        <li><a href="https://github.com/about" data-ga-click="Footer, go to about, text:about">About</a></li>
+
+    </ul>
+
+    <a href="https://github.com" aria-label="Homepage" class="site-footer-mark" title="GitHub">
+      <svg aria-hidden="true" class="octicon octicon-mark-github" height="24" version="1.1" viewBox="0 0 16 16" width="24"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59 0.4 0.07 0.55-0.17 0.55-0.38 0-0.19-0.01-0.82-0.01-1.49-2.01 0.37-2.53-0.49-2.69-0.94-0.09-0.23-0.48-0.94-0.82-1.13-0.28-0.15-0.68-0.52-0.01-0.53 0.63-0.01 1.08 0.58 1.23 0.82 0.72 1.21 1.87 0.87 2.33 0.66 0.07-0.52 0.28-0.87 0.51-1.07-1.78-0.2-3.64-0.89-3.64-3.95 0-0.87 0.31-1.59 0.82-2.15-0.08-0.2-0.36-1.02 0.08-2.12 0 0 0.67-0.21 2.2 0.82 0.64-0.18 1.32-0.27 2-0.27 0.68 0 1.36 0.09 2 0.27 1.53-1.04 2.2-0.82 2.2-0.82 0.44 1.1 0.16 1.92 0.08 2.12 0.51 0.56 0.82 1.27 0.82 2.15 0 3.07-1.87 3.75-3.65 3.95 0.29 0.25 0.54 0.73 0.54 1.48 0 1.07-0.01 1.93-0.01 2.2 0 0.21 0.15 0.46 0.55 0.38C13.71 14.53 16 11.53 16 8 16 3.58 12.42 0 8 0z"></path></svg>
+</a>
+    <ul class="site-footer-links">
+      <li>&copy; 2016 <span title="0.14980s from github-fe146-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
+        <li><a href="https://github.com/site/terms" data-ga-click="Footer, go to terms, text:terms">Terms</a></li>
+        <li><a href="https://github.com/site/privacy" data-ga-click="Footer, go to privacy, text:privacy">Privacy</a></li>
+        <li><a href="https://github.com/security" data-ga-click="Footer, go to security, text:security">Security</a></li>
+        <li><a href="https://github.com/contact" data-ga-click="Footer, go to contact, text:contact">Contact</a></li>
+        <li><a href="https://help.github.com" data-ga-click="Footer, go to help, text:help">Help</a></li>
+    </ul>
+  </div>
+</div>
+
+
+
+    
+
+    <div id="ajax-error-message" class="ajax-error-message flash flash-error">
+      <svg aria-hidden="true" class="octicon octicon-alert" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M15.72 12.5l-6.85-11.98C8.69 0.21 8.36 0.02 8 0.02s-0.69 0.19-0.87 0.5l-6.85 11.98c-0.18 0.31-0.18 0.69 0 1C0.47 13.81 0.8 14 1.15 14h13.7c0.36 0 0.69-0.19 0.86-0.5S15.89 12.81 15.72 12.5zM9 12H7V10h2V12zM9 9H7V5h2V9z"></path></svg>
+      <button type="button" class="flash-close js-flash-close js-ajax-error-dismiss" aria-label="Dismiss error">
+        <svg aria-hidden="true" class="octicon octicon-x" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M7.48 8l3.75 3.75-1.48 1.48-3.75-3.75-3.75 3.75-1.48-1.48 3.75-3.75L0.77 4.25l1.48-1.48 3.75 3.75 3.75-3.75 1.48 1.48-3.75 3.75z"></path></svg>
+      </button>
+      Something went wrong with that request. Please try again.
+    </div>
+
+
+      
+      <script crossorigin="anonymous" integrity="sha256-6lu7KoNzd//eU+EJnlkJyN9NNsxekMBa6zaUsVfffk0=" src="https://assets-cdn.github.com/assets/frameworks-ea5bbb2a837377ffde53e1099e5909c8df4d36cc5e90c05aeb3694b157df7e4d.js"></script>
+      <script async="async" crossorigin="anonymous" integrity="sha256-ORgpFF28BxWN3hEqpja3rItY93JlJ85xC9VhGK4dL1c=" src="https://assets-cdn.github.com/assets/github-391829145dbc07158dde112aa636b7ac8b58f7726527ce710bd56118ae1d2f57.js"></script>
+      
+      
+      
+        <script crossorigin="anonymous" integrity="sha256-+hT/zU5SrG2yMrotlR8HgWqwetd69FfwPka2rCeP2PI=" src="https://assets-cdn.github.com/assets/wiki-fa14ffcd4e52ac6db232ba2d951f07816ab07ad77af457f03e46b6ac278fd8f2.js"></script>
+
+      
+      
+    <div class="js-stale-session-flash stale-session-flash flash flash-warn flash-banner hidden">
+      <svg aria-hidden="true" class="octicon octicon-alert" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M15.72 12.5l-6.85-11.98C8.69 0.21 8.36 0.02 8 0.02s-0.69 0.19-0.87 0.5l-6.85 11.98c-0.18 0.31-0.18 0.69 0 1C0.47 13.81 0.8 14 1.15 14h13.7c0.36 0 0.69-0.19 0.86-0.5S15.89 12.81 15.72 12.5zM9 12H7V10h2V12zM9 9H7V5h2V9z"></path></svg>
+      <span class="signed-in-tab-flash">You signed in with another tab or window. <a href="">Reload</a> to refresh your session.</span>
+      <span class="signed-out-tab-flash">You signed out in another tab or window. <a href="">Reload</a> to refresh your session.</span>
+    </div>
+    <div class="facebox" id="facebox" style="display:none;">
+  <div class="facebox-popup">
+    <div class="facebox-content" role="dialog" aria-labelledby="facebox-header" aria-describedby="facebox-description">
+    </div>
+    <button type="button" class="facebox-close js-facebox-close" aria-label="Close modal">
+      <svg aria-hidden="true" class="octicon octicon-x" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M7.48 8l3.75 3.75-1.48 1.48-3.75-3.75-3.75 3.75-1.48-1.48 3.75-3.75L0.77 4.25l1.48-1.48 3.75 3.75 3.75-3.75 1.48 1.48-3.75 3.75z"></path></svg>
+    </button>
+  </div>
+</div>
+
+  </body>
+</html>
+

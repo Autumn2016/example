@@ -1,0 +1,2 @@
+var data = {"toUserName":"gh_bfdfbab29851","fromUserName":"ovQrfvg3Sx7Z-7VkTZYXhwLk9-JA","createTime":"1460967714","msgType":"text","content":"图文","msgId":"6274808552545167190"}
+console.log(data.toUserName);
