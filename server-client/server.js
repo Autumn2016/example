@@ -26,17 +26,6 @@ function getClientIp(req) {
 
 app.use('/good', function (req, res, next) {
   console.log('good');
-
-//   var tmp = req.headers['x-forwarded-for'] ||
-//         req.connection.remoteAddress ||
-//         req.socket.remoteAddress ||
-//         req.connection.socket.remoteAddress;
-//
-//   console.log(req.headers['x-forwarded-for']);
-//   console.log(req.connection.remoteAddress);
-//   console.log(req.socket.remoteAddress);
-//   console.log(req.connection.socket.remoteAddress);
-
   tmp = getClientIp(req);
   console.log(tmp);
 });
