@@ -1,0 +1,12 @@
+{
+  "name": "node-mailer",
+  "version": "0.0.1",
+  "description": "node-mailer",
+  "keywords": [
+    "email"
+  ],
+  "author": "Conan Zhang ",
+  "dependencies": {
+    "underscore": "^1.8.3"
+  }
+}
