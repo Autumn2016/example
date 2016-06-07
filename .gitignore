@@ -12,6 +12,7 @@ log/
 
 # file
 node_modules
+server-client/node_modules
 nodejs-nodemailer
 .idea
 

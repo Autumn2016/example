@@ -24,13 +24,16 @@ function getClientIp(req) {
   return ipAddress;
 }
 
-app.use('/good', function (req, res, next) {
-  console.log('good');
-  tmp = getClientIp(req);
-  console.log(tmp);
-});
+function test1(req, res, next) {
+  console.log('test1');
+  next();
+}
 
+function test2(req, res) {
+  console.log('test2');
+}
 
+app.use('/good', test1, test2);
 
 
 app.listen(2022);
